@@ -1,0 +1,119 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Sahaj Singh}}\\
+	Surrey, BC $\cdot$ sahaj\_singh@sfu.ca $\cdot$ NUMBER $\cdot$ sahajs.com\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Simon Fraser University}\hfill Burnaby, BC\\
+B.A.Sc. Computer Engineering Honours \textit{GPA: 3.1/4.33} \hfill Sep 2020 - Sep 2025\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{MathWorks} \hfill Burnaby, BC\\
+\textit{MATLAB - SFU Student Ambassador} \hfill Oct 2022 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Organizing and hosting numerous programming and simulation based events revolving around MATLAB and Simulink.
+	\item Helping in the process of creating meaningful relationships between MATLAB and professors/students at SFU.
+	\item Providing support for students with questions related to MATLAB and Simulink. Promoting MATLAB through social media channels and workshops.
+\end{itemize}
+\textbf{picoTera Electronics Inc.} \hfill Richmond, BC\\
+\textit{Software/Firmware Developer} \hfill Jan 2022 - April 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Developed advanced firmware features in C for communication devices operating on PSoC6 embedded platforms.
+	\item Designed and implemented custom feature sets to enhance device functionality and user experience.
+	\item Constructed tailored datasets to facilitate the training and optimization of Recurrent Neural Network (RNN) models for effective noise reduction in smart denoising applications.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & C, C++, Python, MATLAB, Java, ARM Assembly, HTML5/CSS3, Javascript \\
+	Tools \& Technologies: & Git VC, Visual Studio Code, PyCharm, macOS, Linux, Windows         \\
+\end{tabular}
+\vspace{2mm}
+
+
+
+
+
+\ 
+\end{document}
