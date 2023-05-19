@@ -69,8 +69,6 @@
     \begin{document}
 \vspace*{-40pt}
 
-    
-
 %==== Profile ====%
 \vspace*{-10pt}
 \begin{center}
@@ -82,7 +80,7 @@
 \header{Education}
 \textbf{Simon Fraser University}\hfill Burnaby, BC\\
 B.A.Sc. Computer Engineering Honours \textit{GPA: 3.1/4.33} \hfill Sep 2020 - Sep 2025\\
-\vspace{2mm}
+\vspace{1mm}
 
 %==== Skills ====%
 \header{Skills}
@@ -98,39 +96,61 @@ B.A.Sc. Computer Engineering Honours \textit{GPA: 3.1/4.33} \hfill Sep 2020 - Se
 
 \textbf{MathWorks} \hfill Burnaby, BC\\
 \textit{MATLAB - SFU Student Ambassador} \hfill Oct 2022 - Present\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
 	\item Organizing and hosting numerous programming and simulation based events revolving around MATLAB and Simulink.
 	\item Helping in the process of creating meaningful relationships between MATLAB and professors/students at SFU. Providing support for students with questions related to MATLAB and Simulink.
 \end{itemize}
+\vspace{-2mm}
 \textbf{picoTera Electronics Inc.} \hfill Richmond, BC\\
 \textit{Software/Firmware Developer} \hfill Jan 2022 - April 2022\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
 	\item Developed advanced firmware features in C for communication devices operating on PSoC6 embedded platforms. Designed and implemented custom feature sets to enhance device functionality and user experience.
 	\item Constructed tailored datasets to facilitate the training and optimization of Recurrent Neural Network (RNN) models for effective noise reduction in smart denoising applications.
 \end{itemize}
 
 %==== Projects ====%
 \header{Projects}
-\href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\textbf{Multi-threaded Memory Allocator}} {\sl C, Make} \hfill\\
-Developed a multi-threaded memory allocator in C, supporting First Fit, Best Fit, and Worst Fit allocation algorithms. Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization. Designed test cases and provided usage instructions to ensure the allocator\textquotesingle{}s functionality and efficiency.\\
-\vspace*{2mm}
-\href{https://github.com/SatireSage/FPGA-UART-Protocol}{\textbf{FPGA UART Protocol Implementation}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
-Developed a UART protocol for the Altera DE2-115 FPGA, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems. The project was implemented in VHDL and included comprehensive testbenches to verify the functionality of both the transmitter and receiver modules. The system enables synchronous data transmission between UART devices and allows for seamless operation via onboard switches and keys for data input, baud rate selection, and module reset.\\
-\vspace*{2mm}
-\href{https://github.com/SatireSage/Dronee}{\textbf{Drone Controller and System}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
-As team and firmware lead, designed a wireless drone system using a BeagleBone Green controller and Arduino Nano 33 IOT drone. Developed multiple control modes, integrated LCD display, and implemented an ultrasonic sensor for gesture-based height control. Wrote a custom driver for efficient BLE communication between the controller and drone. Incorporated a watchdog and systemd for automated restarts, and supervised the 3D printing of the drone frame.\\
-\vspace*{2mm}
-\href{https://github.com/SatireSage/FASTrack}{\textbf{FASTrack - Reaction Time Game}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
-Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the ARM7 assembly instruction set. The game challenges users to stop their moving arrow at a randomly generated endpoint on the OLED display. Implemented various game features such as multiple speed modes and user controls through switches, as well as the OLED display and LEDs for visual feedback. Key concepts demonstrated in this project include timer interrupts, masking, OLED display usage, and Finite State Machines (FSMs).\\
-\vspace*{2mm}
+\vspace{1mm}
+
+\href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\textbf{Multi-threaded Memory Allocator}} {\sl C, Make}
+\vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed a multi-threaded memory allocator in C, supporting First Fit, Best Fit, and Worst Fit allocation algorithms.
+    \item Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization.
+    \item Designed test cases and provided usage instructions to ensure the allocator's functionality and efficiency.
+\end{itemize}
+
+\href{https://github.com/SatireSage/FPGA-UART-Protocol}{\textbf{FPGA UART Protocol Implementation}} {\sl VHDL, Modelsim, Altera DE2-115}
+\vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed a UART protocol for the Altera DE2-115 FPGA, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems.
+    \item Implemented in VHDL with comprehensive testbenches to verify the functionality of both the transmitter and receiver modules.
+    \item Enabled synchronous data transmission between UART devices and allowed for seamless operation via onboard switches and keys for data input, baud rate selection, and module reset.
+\end{itemize}
+
+\href{https://github.com/SatireSage/Dronee}{\textbf{Drone Controller and System}} {\sl VHDL, Modelsim, Altera DE2-115}
+\vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+    \item Designed a wireless drone system using a BeagleBone Green controller and Arduino Nano 33 IOT drone.
+    \item Developed multiple control modes, integrated LCD display, and implemented an ultrasonic sensor for gesture-based height control.
+    \item Wrote a custom driver for efficient BLE communication between the controller and drone.
+    \item Incorporated a watchdog and systemd script for automated restarts to handle any unexpected system crashes.
+\end{itemize}
+
+\href{https://github.com/SatireSage/FASTrack}{\textbf{FASTrack - Reaction Time Game}} {\sl VHDL, Modelsim, Altera DE2-115}
+\vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the ARM7 assembly instruction set.
+    \item Implemented various game features such as multiple speed modes and user controls through switches. Utilized OLED display and LEDs for visual feedback.
+    \item Demonstrated key concepts including timer interrupts, masking, OLED display usage, and Finite State Machines (FSMs).
+\end{itemize}
 
 %==== Awards ====%
 \header{Awards}
 \textbf{ESSS Award} and \textbf{Innovation Award - 2022} \hfill SFU - Engineering Science Student Society\\
 Honors contributions to the student society and Recognized for outstanding creativity, originality, and impact via my projects driving advancements in technology.\\
-\vspace*{2mm}
+\vspace*{1mm}
 
-\ 
 \end{document}
