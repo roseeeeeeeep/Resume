@@ -9,6 +9,7 @@
     \pagestyle{empty}
     \raggedright
     \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage{hyperref}
 
     %\renewcommand{\encodingdefault}{cg}
 %\renewcommand{\rmdefault}{lgrcmr}
@@ -83,6 +84,14 @@
 B.A.Sc. Computer Engineering Honours \textit{GPA: 3.1/4.33} \hfill Sep 2020 - Sep 2025\\
 \vspace{2mm}
 
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & C, C++, Python, MATLAB, Java, ARM Assembly, HTML5/CSS3, Javascript \\
+	Tools \& Technologies: & Git VC, Visual Studio Code, PyCharm, macOS, Linux, Windows         \\
+\end{tabular}
+\vspace{1mm}
+
 %==== Experience ====%
 \header{Work Experience}
 \vspace{1mm}
@@ -102,29 +111,24 @@ B.A.Sc. Computer Engineering Honours \textit{GPA: 3.1/4.33} \hfill Sep 2020 - Se
 	\item Constructed tailored datasets to facilitate the training and optimization of Recurrent Neural Network (RNN) models for effective noise reduction in smart denoising applications.
 \end{itemize}
 
-\header{Skills}
-\begin{tabular}{ l l }
-	Programming Languages: & C, C++, Python, MATLAB, Java, ARM Assembly, HTML5/CSS3, Javascript \\
-	Tools \& Technologies: & Git VC, Visual Studio Code, PyCharm, macOS, Linux, Windows         \\
-\end{tabular}
-\vspace{2mm}
-
+%==== Projects ====%
 \header{Projects}
-{\textbf{Multi-threaded Memory Allocator}} {\sl C, Make} \hfill https://github.com/SatireSage/Multi-threaded-Memory-Allocator\\
+\href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\textbf{Multi-threaded Memory Allocator}} {\sl C, Make} \hfill\\
 Developed a multi-threaded memory allocator in C, supporting First Fit, Best Fit, and Worst Fit allocation algorithms. Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization. Designed test cases and provided usage instructions to ensure the allocator\textquotesingle{}s functionality and efficiency.\\
 \vspace*{2mm}
-{\textbf{FPGA UART Protocol Implementation}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill https://github.com/SatireSage/FPGA-UART-Protocol\\
+\href{https://github.com/SatireSage/FPGA-UART-Protocol}{\textbf{FPGA UART Protocol Implementation}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
 Developed a UART protocol for the Altera DE2-115 FPGA, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems. The project was implemented in VHDL and included comprehensive testbenches to verify the functionality of both the transmitter and receiver modules. The system enables synchronous data transmission between UART devices and allows for seamless operation via onboard switches and keys for data input, baud rate selection, and module reset.\\
 \vspace*{2mm}
-{\textbf{Dronee Controller and Drone System}} {\sl Embedded C, Arduino (C++), Beaglebone} \hfill https://github.com/SatireSage/Dronee\\
+\href{https://github.com/SatireSage/Dronee}{\textbf{Drone Controller and System}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
 As team and firmware lead, designed a wireless drone system using a BeagleBone Green controller and Arduino Nano 33 IOT drone. Developed multiple control modes, integrated LCD display, and implemented an ultrasonic sensor for gesture-based height control. Wrote a custom driver for efficient BLE communication between the controller and drone. Incorporated a watchdog and systemd for automated restarts, and supervised the 3D printing of the drone frame.\\
 \vspace*{2mm}
-{\textbf{FASTrack - Reaction Time Game}} {\sl Assembly, Embedded C, Zedboard} \hfill https://github.com/SatireSage/FASTrack\\
+\href{https://github.com/SatireSage/FASTrack}{\textbf{FASTrack - Reaction Time Game}} {\sl VHDL, Modelsim, Altera DE2-115} \hfill\\
 Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the ARM7 assembly instruction set. The game challenges users to stop their moving arrow at a randomly generated endpoint on the OLED display. Implemented various game features such as multiple speed modes and user controls through switches, as well as the OLED display and LEDs for visual feedback. Key concepts demonstrated in this project include timer interrupts, masking, OLED display usage, and Finite State Machines (FSMs).\\
 \vspace*{2mm}
 
+%==== Awards ====%
 \header{Awards}
-\textbf{ESSS Award and Innovation Award - 2022} \hfill SFU Engineering Science Student Society\\
+\textbf{ESSS Award} and \textbf{Innovation Award - 2022} \hfill SFU - Engineering Science Student Society\\
 Honors contributions to the student society and Recognized for outstanding creativity, originality, and impact via my projects driving advancements in technology.\\
 \vspace*{2mm}
 
