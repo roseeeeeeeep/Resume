@@ -4,7 +4,7 @@
     \usepackage[empty]{fullpage}
     \usepackage{titlesec}
     \usepackage{marvosym}
-    \usepackage[usenames,dvipsnames]{color}
+    \usepackage[usenames,dvipsnames]{xcolor}
     \usepackage{verbatim}
     \usepackage{enumitem}
     \usepackage[hidelinks, colorlinks=false]{hyperref}
@@ -13,6 +13,7 @@
     \usepackage{fancyhdr}
     \usepackage[english]{babel}
     \usepackage{tabularx}
+    \usepackage{fontawesome5}
     \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -40,9 +41,11 @@
 
 %----Resume Definitions----%
 
+\definecolor{colorValue}{RGB}{27, 71, 127}
+
 % Sections formatting:
 \titleformat{\section}{
-    \vspace{-10pt}\scshape\raggedright\large
+    \vspace{-13pt}\scshape\raggedright\large\color{colorValue}\bfseries
 }{}{0em}{}[\color{black}\titlerule{}\vspace{-5pt}]
 
 % Custom commands:
@@ -53,10 +56,10 @@
 
 \newcommand{\contact} [5] {
     \begin{center}
-        \textbf{\Huge #1} \\ \vspace{1pt}
-        \small \href{https://#2}{#2} $|$ \href{mailto:#3}{#3} $|$ 
-        \href{#4}{\underline{LinkedIn}} $|$
-        \href{#5}{\underline{GitHub}}
+        \textbf{\color{colorValue}\Huge #1} \\ \vspace{1pt}
+        \small \href{https://#2}{\faIcon{code} \underline{#2}} $|$ \href{mailto:#3}{\faIcon{envelope} \underline{#3}} $|$ 
+        \href{#4}{\faIcon{linkedin} \underline{Sahaj--Singh}} $|$
+        \href{#5}{\faIcon{github} \underline{SatireSage}}
     \end{center}
 }
 
@@ -69,7 +72,7 @@
 }
 
 \newcommand{\school} [5] {
-    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} (#2)\\}
+    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1 #2}}\\}
 }
 
 \newcommand{\workItemListStart} [0] {
@@ -83,7 +86,7 @@
 }
 
 \newcommand{\resumeItemListStart} [0] {
-    \vspace{3pt}
+    \vspace{1pt}
     \begin{itemize}[leftmargin=*,topsep=0pt,itemsep=-2pt]
 }
 
@@ -105,8 +108,8 @@
     \section{Technical Skills}
     \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Programming Languages:}{ C, C++, Python, MATLAB, Java, Assembly, HTML5/CSS3, Javascript} \\
-        \textbf{Tools \& Technologies:}{ Git VC, Visual Studio Code, PyCharm, macOS, Linux, Windows, Android} \\
+        \textbf{Programming Languages:}{ C, C++, Python, MATLAB, Bash, Java, Assembly, HTML5/CSS3, Javascript, Flutter} \\
+        \textbf{Tools, Frameworks \& Technologies:}{ Git, Jira, React, Visual Studio Code, PyCharm, macOS, Linux, Windows, Android} \\
     }}
     \end{itemize}
     %----End of Skills----%
@@ -129,26 +132,26 @@
 
     %----Projects----%
     \section{Projects}
-    \href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\underline{\textbf{Multi-threaded Memory Allocator:}}} {\sl C, Make\/} \hfill \textbf{Spring 2023}
+    \href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\faIcon{link} \underline{\textbf{Multi-threaded Memory Allocator:}}} {\sl C, Make\/} \hfill \textbf{Spring 2023}
     \resumeItemListStart{}
         \Item{Developed a multi-threaded memory allocator in C, supporting First Fit, Best Fit, and Worst Fit allocation algorithms.}
         \Item{Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization.}
         \Item{Designed test cases and provided usage instructions to ensure the proper functionality and efficiency.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/FPGA-UART-Protocol}{\underline{\textbf{FPGA UART Protocol Implementation:}}} {\sl VHDL, Modelsim, Altera DE2\/} \hfill \textbf{Spring 2023}
+    \href{https://github.com/SatireSage/FPGA-UART-Protocol}{\faIcon{link} \underline{\textbf{FPGA UART Protocol Implementation:}}} {\sl VHDL, Modelsim, Altera DE2\/} \hfill \textbf{Spring 2023}
     \resumeItemListStart{}
         \Item{Developed a UART protocol for the Altera DE2 FPGA, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems.}
         \Item{Implemented in VHDL with comprehensive testbenches to verify the functionality of both the transmitter and receiver modules.}
         \Item{Enabled synchronous data transmission between UART devices and allowed for seamless operation via onboard switches and keys for data input, baud rate selection, and module reset.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/Dronee}{\underline{\textbf{Drone Controller and System:}}} {\sl Embedded C, Arduino (C++), Beaglebone\/} \hfill \textbf{Fall 2022}
+    \href{https://github.com/SatireSage/Dronee}{\faIcon{link} \underline{\textbf{Drone Controller and System:}}} {\sl Embedded C, Arduino (C++), Beaglebone\/} \hfill \textbf{Fall 2022}
     \resumeItemListStart{}
         \Item{Designed a wireless drone system using a BeagleBone Green and Arduino Nano 33 IOT drone.}
         \Item{Developed multiple control modes, integrated LCD display, and implemented an ultrasonic sensor for gesture-based height control.}
-        \Item{Wrote a custom driver for efficient BLE communication between the controller and drone.}
+        \Item{Wrote a custom driver for a UART-BLE module in C for efficient BLE communication between the controller and drone.}
         \Item{Incorporated a watchdog and systemd script for automated restarts to handle any unexpected system crashes.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/FASTrack}{\underline{\textbf{FASTrack - Reaction Time Game:}}} {\sl Assembly, Embedded C, Zedboard\/} \hfill \textbf{Summer 2022}
+    \href{https://github.com/SatireSage/FASTrack}{\faIcon{link} \underline{\textbf{FASTrack - Reaction Time Game:}}} {\sl Assembly, Embedded C, Zedboard\/} \hfill \textbf{Summer 2022}
     \resumeItemListStart{}
         \Item{Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the ARM7 assembly instruction set.}
         \Item{Implemented various game features such as multiple speed modes and user controls through switches. Utilized OLED display and LEDs for visual feedback.}
@@ -158,13 +161,15 @@
 
     %----Education----%
     \section{Education}
-    \school{Simon Fraser University}{B.A.Sc. Computer Engineering --- Honours}{Burnaby, BC}{Sep 2020}{Sep 2025}
+    \school{Simon Fraser University}{(Burnaby, BC)}{B.A.Sc. Computer Engineering --- Honours}{Sep 2020}{Sep 2025}
     %----End of Education----%
 
     %----Awards----%
     \section{Awards}
-    \textbf{Innovation Award}/\textbf{ESSS Award: 2022} \hfill SFU --- Engineering Science Student Society\\
-    Honors contributions to the student society and Recognized for outstanding creativity, originality, and impact via my projects driving advancements in technology.\\
+    \textbf{Innovation Award} / \textbf{ESSS Award} \hfill \textbf{Spring 2022}\\
+    \textbf{\emph{Simon Fraser University (Burnaby, BC)}}\\
+    Recognized for outstanding creativity, originality, and impact via my projects driving advancements in technology.\\
+    Honored for contributions to the student society.\\
     %----End of Awards----%
 
 \end{document}
