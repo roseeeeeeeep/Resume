@@ -1,0 +1,101 @@
+\documentclass[letterpaper,11pt]{article}
+    \usepackage{times}
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{xcolor}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[hidelinks, colorlinks=false]{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{fancyhdr}
+    \usepackage[english]{babel}
+    \usepackage{tabularx}
+    \usepackage{fontawesome5}
+    \input{glyphtounicode}
+    \usepackage{lipsum}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom{}
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----Resume Definitions----%
+
+\definecolor{colorValue}{RGB}{27, 71, 127}
+
+% Sections formatting:
+\titleformat{\section}{
+    \vspace{-13pt}\scshape\raggedright\large\color{colorValue}\bfseries
+}{}{0em}{}[\color{black}\titlerule{}\vspace{-5pt}]
+
+% Custom commands:
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill\\
+}
+
+\newcommand{\contact} [5] {
+    \begin{center}
+        \textbf{\color{colorValue}\Huge #1} \\ \vspace{1pt}
+        \small \href{https://#2}{\faIcon{code} \underline{#2}} $|$ \href{mailto:#3}{\faIcon{envelope} \underline{#3}} $|$ 
+        \href{#4}{\faIcon{linkedin} \underline{Sahaj--Singh}} $|$
+        \href{#5}{\faIcon{github} \underline{SatireSage}}
+    \end{center}
+}
+
+\begin{document}
+    \vspace*{-30pt}
+
+    %----Profile----%
+    % chktex-file 8
+    \contact{Sahaj Singh}{sahajs.com}{sahaj\_singh@sfu.ca}{https://www.linkedin.com/in/sahaj--singh/}{https://github.com/SatireSage}
+    %----End of Profile----%
+
+    \section{Cover Letter}
+    \setlength{\parindent}{0pt}
+    \vspace*{10pt}
+
+    \par \textbf{Hiring Manager}
+    \par Your Address
+    \par City, State, Zipcode
+    \vspace*{10pt}
+    \par \textbf{\color{colorValue}Software Development Role}
+
+    \vspace*{10pt}
+    \par Dear Hiring Manager,  \hfill \textbf{\today}
+    \vspace*{10pt}
+    \par I am delighted to be applying for the Software Development role at your esteemed organization. My journey in the IT world, beginning from penning my first lines of code to managing comprehensive projects as a developer, has fueled my passion for this dynamic field and has equipped me with a valuable skillset.
+    \vspace*{10pt}
+    \par Throughout my professional trajectory, I've gained extensive proficiency in Python, C++, and C. My tenure as a Computer Engineering major has been filled with numerous projects that have not only expanded my technical acumen but also refined my teamwork and project management capabilities. One standout project was the Smart Recycling Bin initiative, which focused on differentiating between soft and hard plastics. This required effective team coordination, strategic task delegation based on individual strengths, and scrupulous time management.
+    \vspace*{10pt}
+    \par The experiences gained from these endeavors have honed my versatility and resilience, making me a potential asset to your team. Alongside my technical prowess, I have a passion for collaborative ventures such as game jams and hackathons, which have fostered my team-oriented mindset.
+    \vspace*{10pt}
+    \par I've had the privilege to implement both Waterfall and Agile methodologies across various project phases, bolstering my comprehensive understanding of these approaches. My meticulous attention to detail, superior communication skills, and proficiency in managing diverse tasks are qualities I believe would be well-suited for the Software Development role.
+    \vspace*{10pt}
+    \par For a more detailed view of my career history and qualifications, please refer to the attached resume. Should you have any additional questions or if a deeper discussion would be beneficial, please feel free to contact me. I am eager for the opportunity to demonstrate my capabilities in an interview and look forward to hearing from you soon.
+    \vspace*{10pt}
+    \par Thank you for considering my application. I appreciate your time in reviewing my credentials.
+    \vspace*{10pt}
+    \par Sincerely,
+    \par Sahaj Singh
+\end{document}
