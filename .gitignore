@@ -312,4 +312,5 @@ TSWLatexianTemp*
 *.glstex
 
 temp.tex
+/temp/
 # End of https://www.toptal.com/developers/gitignore/api/latex
