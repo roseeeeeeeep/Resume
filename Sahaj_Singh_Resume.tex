@@ -68,11 +68,11 @@
 }
 
 \newcommand{\employer} [5] {
-    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} (#2)\\}
+    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} \hfill #2\\}
 }
 
 \newcommand{\school} [5] {
-    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1 #2}}\\}
+    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} \hfill #2\\}
 }
 
 \newcommand{\workItemListStart} [0] {
@@ -106,7 +106,7 @@
 
     %----Skills----%
     \section{Technical Skills}
-    \begin{itemize}[leftmargin=0.15in, label={}]
+    \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
         \textbf{Programming Languages:}{ C, C++, Python, MATLAB, Bash, Java, Assembly, HTML5/CSS3, Javascript, Flutter} \\
         \textbf{Tools, Frameworks \& Technologies:}{ Git, Jira, React, Visual Studio Code, PyCharm, macOS, Linux, Windows, Android} \\
@@ -118,42 +118,42 @@
     \section{Work Experience}
     \employer{MathWorks}{Burnaby, BC}{MATLAB --- SFU Student Ambassador}{Oct 2022}{Present}
     \workItemListStart{}
-        \Item{Organizing and hosting numerous programming and simulation based events revolving around MATLAB and Simulink.}
+        \Item{Organizing and hosting numerous programming and simulation based events revolving around \textbf{MATLAB and Simulink.}}
         \Item{Helping in the process of creating meaningful relationships between MATLAB and professors/students at SFU.\@ Providing support for students with questions related to MATLAB and Simulink.}
     \workItemListEnd{}
-    \employer{picoTera Electronics Inc.}{Richmond, BC}{Software/Firmware Developer}{Jan 2022}{April 2022}
+    \employer{picoTera Electronics Inc.}{Richmond, BC}{Software/Firmware Developer}{Jan}{April 2022}
     \workItemListStart{}
-        \Item{Developed advanced firmware in C/C++ for PSoC6 and ARM Cortex-M4, M0 platforms and ported the project from PSoC creator to ModusToolbox 2.4 for better compatibility.}
-        \Item{Constructed a unique audio dataset for a Recurrent Neural Network (RNN) model, significantly improving its noise reduction capabilities in denoising applications.}
-        \Item{Implemented Static Gain replacing dynamic gain, optimizing post-processing audio quality, and boosting denoising performance.}
-        \Item{Authored custom cmake scripts for CMSIS libraries creation, reducing memory usage in complex operations and enabled Bluetooth Low Energy (BLE) integration between PSoC6 and an Android app, facilitating real-time data transmission.}
+        \Item{Developed advanced firmware in C/C++ for \textbf{PSoC6 and ARM Cortex-M4, M0 platforms} and ported the project from PSoC creator to ModusToolbox 2.4 for better compatibility.}
+        \Item{Implemented modifications to a Recurrent Neural Network \textbf{(RNN) model written in Python} and \textbf{ported in C} for Cortex-M4 devices, reducing noise in audio denoising applications approximately from \textbf{90+ decibels down to 60 decibels.} Additionally, created a custom audio dataset to train the RNN model, increasing the variety of noise profiles for training by a factor of 3.}
+        \Item{Replaced dynamic gain with static gain, optimizing post-processing audio quality, and \textbf{boosting denoising performance by 25\%.}}
+        \Item{Authored custom \textbf{cmake scripts for CMSIS libraries}, reducing memory usage and storage in complex operations and enabled Bluetooth Low Energy \textbf{(BLE) integration} between PSoC6 and an Android app, facilitating real-time data transmission.}
     \workItemListEnd{}
     %----End of Experience----%
 
     %----Projects----%
     \section{Projects}
-    \href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{\faIcon{link} \underline{\textbf{Multi-threaded Memory Allocator:}}} {\sl C, Make\/} \hfill \textbf{Spring 2023}
+    \href{https://github.com/SatireSage/Multi-threaded-Memory-Allocator}{{\color{colorValue}\faIcon{link}} \underline{\textbf{Multi-threaded Memory Allocator:}}} \hfill \textbf{Spring 2023}
     \resumeItemListStart{}
-        \Item{Developed a multi-threaded memory allocator in C, supporting First Fit, Best Fit, and Worst Fit allocation algorithms.}
-        \Item{Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization.}
-        \Item{Designed test cases and provided usage instructions to ensure the proper functionality and efficiency.}
+        \Item{Developed a multi-threaded memory allocator in C, supporting \textbf{First Fit, Best Fit, and Worst Fit allocation algorithms.}}
+        \Item{Implemented features such as allocator initialization, allocation/deallocation interfaces, metadata management, compaction support, statistics reporting, multi-threading support, and uninitialization in C.}
+        \Item{Designed test cases and provided usage instructions to ensure the proper functionality and efficiency. Wrote custom Makefile for easy compilation and execution.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/FPGA-UART-Protocol}{\faIcon{link} \underline{\textbf{FPGA UART Protocol Implementation:}}} {\sl VHDL, Modelsim, Altera DE2\/} \hfill \textbf{Spring 2023}
+    \href{https://github.com/SatireSage/FPGA-UART-Protocol}{{\color{colorValue}\faIcon{link}} \underline{\textbf{FPGA UART Protocol Implementation:}}} \hfill \textbf{Spring 2023}
     \resumeItemListStart{}
-        \Item{Developed a UART protocol for the Altera DE2 FPGA, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems.}
-        \Item{Implemented in VHDL with comprehensive testbenches to verify the functionality of both the transmitter and receiver modules.}
+        \Item{Developed a \textbf{UART protocol} for the \textbf{Altera DE2 FPGA}, featuring baud rate generation, data framing, error detection and correction, and handshaking subsystems.}
+        \Item{Implemented in \textbf{VHDL} with comprehensive testbenches in \textbf{Modelsim} to verify the functionality of both the transmitter and receiver modules.}
         \Item{Enabled synchronous data transmission between UART devices and allowed for seamless operation via onboard switches and keys for data input, baud rate selection, and module reset.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/Dronee}{\faIcon{link} \underline{\textbf{Drone Controller and System:}}} {\sl Embedded C, Arduino (C++), Beaglebone\/} \hfill \textbf{Fall 2022}
+    \href{https://github.com/SatireSage/Dronee}{{\color{colorValue}\faIcon{link}} \underline{\textbf{Drone Controller and System:}}} \hfill \textbf{Fall 2022}
     \resumeItemListStart{}
         \Item{Designed a wireless drone system using a BeagleBone Green and Arduino Nano 33 IOT drone.}
         \Item{Developed multiple control modes, integrated LCD display, and implemented an ultrasonic sensor for gesture-based height control.}
-        \Item{Wrote a custom driver for a UART-BLE module in C for efficient BLE communication between the controller and drone.}
-        \Item{Incorporated a watchdog and systemd script for automated restarts to handle any unexpected system crashes.}
+        \Item{Wrote a custom driver for a \textbf{UART-BLE module in C} for efficient BLE communication between the controller and drone.}
+        \Item{Incorporated watchdog and systemd scripts for automated restarts to handle any unexpected system crashes.}
     \resumeItemListEnd{}
-    \href{https://github.com/SatireSage/FASTrack}{\faIcon{link} \underline{\textbf{FASTrack - Reaction Time Game:}}} {\sl Assembly, Embedded C, Zedboard\/} \hfill \textbf{Summer 2022}
+    \href{https://github.com/SatireSage/FASTrack}{{\color{colorValue}\faIcon{link}} \underline{\textbf{FASTrack - Reaction Time Game:}}} \hfill \textbf{Summer 2022}
     \resumeItemListStart{}
-        \Item{Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the ARM7 assembly instruction set.}
+        \Item{Developed a reaction time-based game called FASTrack for the Xilinx ZedBoard, utilizing the \textbf{ARM7 assembly instruction set.}}
         \Item{Implemented various game features such as multiple speed modes and user controls through switches. Utilized OLED display and LEDs for visual feedback.}
         \Item{Demonstrated key concepts including timer interrupts, masking, OLED display usage, and Finite State Machines (FSMs).}
     \resumeItemListEnd{}
@@ -161,13 +161,13 @@
 
     %----Education----%
     \section{Education}
-    \school{Simon Fraser University}{(Burnaby, BC)}{B.A.Sc. Computer Engineering --- Honours}{Sep 2020}{Sep 2025}
+    \school{Simon Fraser University}{Burnaby, BC}{B.A.Sc. Computer Engineering --- Honours}{Sep 2020}{Sep 2025}
     %----End of Education----%
 
     %----Awards----%
     \section{Awards}
     \textbf{Innovation Award} / \textbf{ESSS Award} \hfill \textbf{Spring 2022}\\
-    \textbf{\emph{Simon Fraser University (Burnaby, BC)}}\\
+    \textbf{\emph{Simon Fraser University}}  \hfill Burnaby, BC\\
     Recognized for outstanding creativity, originality, and impact via my projects driving advancements in technology.\\
     Honored for contributions to the student society.\\
     %----End of Awards----%
