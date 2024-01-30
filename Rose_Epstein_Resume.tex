@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+    \usepackage{times}
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{xcolor}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[hidelinks, colorlinks=false]{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{fancyhdr}
+    \usepackage[english]{babel}
+    \usepackage{tabularx}
+    \usepackage{fontawesome5}
+    \input{glyphtounicode}
+    
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom{}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----Resume Definitions----%
+
+\definecolor{colorValue}{RGB}{72, 114, 103}
+
+% Sections formatting:
+\titleformat{\section}{
+    \vspace{-13pt}\scshape\raggedright\large\color{colorValue}\bfseries
+}{}{0em}{}[\color{black}\titlerule{}\vspace{-5pt}]
+
+% Custom commands:
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill\\
+}
+
+\newcommand{\contact} [4] {
+    \begin{center}
+        \textbf{\color{colorValue}\Huge #1} \\ \vspace{1pt}
+        \small {\faIcon{phone} \underline{#2}} $|$ \href{mailto:#3}{\faIcon{envelope} \underline{#3}} $|$ 
+        \href{#4}{\faIcon{linkedin} \underline{Rose--Epstein}} $|$
+    \end{center}
+}
+
+\newcommand{\Item} [1] {
+    \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\employer} [5] {
+    {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} \hfill #2\\}
+}
+
+\newcommand{\school} [6] {
+    {\textbf{#1} \hfill \textbf{#5 --- #6}\\ \textbf{#3} \hfill #2\\ \begin{itemize}[topsep=0pt,itemsep=-2pt]\item{\textbf{\emph{#4}}}\end{itemize}}
+}
+
+\newcommand{\workItemListStart} [0] {
+    \vspace{-1pt}
+    \begin{itemize}[topsep=0pt,itemsep=-2pt]
+}
+
+\newcommand{\workItemListEnd} [0] {
+    \end{itemize}
+    \vspace{1pt}
+}
+
+\newcommand{\resumeItemListStart} [0] {
+    \vspace{2pt}
+    \begin{itemize}[topsep=0pt,itemsep=-2pt]
+}
+
+\newcommand{\resumeItemListEnd} [0] {
+    \end{itemize}
+    \vspace{5pt}
+}
+%----End of Resume Definitions----%
+
+\begin{document}
+    \vspace*{-30pt}
+
+    %----Profile----%
+    % chktex-file 8
+    % chktex-file 12
+    % chktex-file 29
+    \contact{Rose Epstein}{+1(306) 850 --7153}{rea13@sfu.ca}{https://www.linkedin.com/in/rose-epstein/}
+    %----End of Profile----%
+
+    %----Skills----%
+    \section{TECHNICAL SKILLS}
+    \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+        \textbf{Programming Languages:}{ C / C++, VHDL, Haskell, Assembly, SQL} \\
+        \textbf{Tools, Frameworks \& Technologies:}{ Linux, Git, VS Code, LT Spice, Atmel Studio, Quartus/Modelsim, macOS, Windows} \\
+        \textbf{Linux:}{ Admin, Bash, Kernel Config, Package Mgmt (APT, YUM), Networking, UFW/iptables, FS Mgmt, cron, SSH} \\
+        \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Fundamentals of Digital Logic and Design} \\
+    }}
+    \end{itemize}
+    %----End of Skills----%
+
+    %----Experience----%
+    \section{WORK EXPERIENCE}
+    \employer{Epic Semiconductors}{Vancouver, BC}{Application Engineer}{Jan}{Apr 2022}
+    \workItemListStart{}
+        \Item{Designed and executed experiments for process and product development, including assembling, testing prototypes and analyzing PCB circuits.}
+        \Item{DSuccessfully executed a heart-shaped PCB project to completion used in client demonstrations.}
+    \workItemListEnd{}
+    %----End of Experience----%
+
+    %----Projects----%
+    \section{PROJECT EXPERIENCE}
+    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization:}}} \hfill \textbf{Spring 2023}
+    \resumeItemListStart{}
+        \Item{Coordinated with a group of four to implement an FPGA acceleration project on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using High-Level Synthesis (HLS) C++.}
+        \Item{\textbf{Optimized the data transfer} between the host and FPGA with memory coalescing optimizations}
+    \resumeItemListEnd{}
+    {{\color{colorValue}} \underline{\textbf{Customized UART Protocol in an FPGA:}}} \hfill \textbf{Summer 2023}
+    \resumeItemListStart{}
+        \Item{Coordinated with a group of two to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
+        \Item{Implemented the transmitter component to send data serially to the receiver, and extensively tested the entire system with a testbench using ModelSim.}
+    \resumeItemListEnd{}
+    {{\color{colorValue}} \underline{\textbf{Beaglebone Beatbox Analyzer:}}} \hfill \textbf{Fall 2022}
+    \resumeItemListStart{}
+        \Item{Coordinated with a group of two to develop a drumbeat beatbox program on the Beaglebone}
+        \Item{Implemented a user interface featuring a button interface for selecting different drum beat sequences and triggering individual beats.}
+    \resumeItemListEnd{}
+    %----End of Projects----%
+
+    %----Education----%
+    \section{EDUCATION}
+    \school{Simon Fraser University}{Burnaby, BC}{B.A.Sc. Computer Engineering}{Computing Science Minor}{Fall 2020}{Present}
+    \school{University of Saskatchewan}{Saskatoon, SK}{B.Sc. Physiology and Pharmacology}{Graduated with great distinction}{Fall 2016}{Summer 2020}
+    %----End of Education----%
+
+    %----Awards----%
+    \section{LEADERSHIP EXPERIENCE}
+    \employer{Women in Engineering (WiE)}{Burnaby, BC}{Co-President}{May 2022}{2023}
+    \workItemListStart{}
+        \Item{Lead the Women in Engineering club in providing programs, supports and opportunities forunderrepresented students in engineering}
+    \workItemListEnd{}
+    %----End of Awards----%
+
+\end{document}
