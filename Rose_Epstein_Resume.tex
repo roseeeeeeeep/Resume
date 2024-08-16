@@ -109,9 +109,17 @@
     \section{TECHNICAL SKILLS}
     \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
+<<<<<<< Updated upstream
         \textbf{Programming Languages:}{ C / C++, VHDL, Haskell, Assembly, SQL} \\
         \textbf{Tools, Frameworks \& Technologies:}{ Linux, Git, VS Code, LT Spice, Atmel Studio, Quartus/Modelsim, macOS, Windows} \\
         \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Fundamentals of Digital Logic and Design, Advanced Digital Systems} \\
+=======
+        \textbf{Programming Languages:}{ C / C++, VHDL, SQL, MATLAB, Haskell, Assembly} \\
+        \textbf{Tools, Frameworks \& Technologies:}{ Git, Visual Studio Code, Quartus Prime, Modelsim, Xilinx Vivado, Linux, macOS, Windows} \\
+        %--Have not worked with linux enough to know what this means--%
+        %%\textbf{Linux:}{ Admin, Bash, Kernel Config, Package Mgmt (APT, YUM), Networking, UFW/iptables, FS Mgmt, cron, SSH} \\
+        \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Advanced Digital Systems, Programming for Heterogeneous Systems} \\
+>>>>>>> Stashed changes
     }}
     \end{itemize}
     %----End of Skills----%
@@ -121,19 +129,28 @@
     \employer{Epic Semiconductors}{Vancouver, BC}{Application Engineer}{Jan}{Apr 2022}
     \workItemListStart{}
         \Item{Designed and executed experiments for process and product development, including assembling, testing prototypes and analyzing PCB circuits.}
-        \Item{DSuccessfully executed a heart-shaped PCB project to completion used in client demonstrations.}
-    \workItemListEnd{}
+        \Item{Designed, tested and implemented a \textbf{heart-shaped PCB project} to completion used in client demonstrations.}
+        \Item{Designed and tested a \textbf{complex theremin gesture detection circuit} to be used for future client demonstrations.}
+        \workItemListEnd{}
     %----End of Experience----%
 
     %----Projects----%
     \section{PROJECT EXPERIENCE}
-    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization:}}} \hfill \textbf{Spring 2023}
+    {{\color{colorValue}} \underline{\textbf{Snake Game on Zedboard:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-        \Item{Coordinated with a group of four to implement an FPGA acceleration project on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using High-Level Synthesis (HLS) C++.}
+        \Item{Implemented \textbf{interrupt-driven VGA graphics iterface for Snake Game on Xilinx Zedboard}, with push button input for real-time user interaction.}
+        \Item{Implemented the interrupt handler, and integrated this with the VGA controller and SoC, creating a seamless embeded system.}
+        \Item{Designed \textbf{game logic in software using C++}, and created all \textbf{custom graphics with GiMP}, including game screens, sprites and animations.}
+        \Item{Independently designed, implemented and tested the hardware, using Xilinx Vivado, and the software, using Xilinx Vitis.}
+    \resumeItemListEnd{}
+    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization:}}} \hfill \textbf{Fall 2023}
+    \resumeItemListStart{}
+        \Item{Implement an \textbf{FPGA acceleration project} on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using \textbf{High-Level Synthesis (HLS) C++.}}
         \Item{\textbf{Optimized the data transfer} between the host and FPGA with memory coalescing optimizations}
     \resumeItemListEnd{}
     {{\color{colorValue}} \underline{\textbf{Customized UART Protocol in an FPGA:}}} \hfill \textbf{Summer 2023}
     \resumeItemListStart{}
+        \Item{Implemented \textbf{UART protocol on the Altera DE2 FPGA}, with baud rate generation, data framing and error detection.}
         \Item{Coordinated with a group of two to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
         \Item{Implemented the transmitter component to send data serially to the receiver, and extensively tested the entire system with a testbench using ModelSim.}
     \resumeItemListEnd{}
@@ -146,7 +163,7 @@
 
     %----Education----%
     \section{EDUCATION}
-    \school{Simon Fraser University}{Burnaby, BC}{B.A.Sc. Computer Engineering}{Computing Science Minor}{Fall 2020}{Present}
+    \school{Simon Fraser University - B.A.Sc.,}{Burnaby, BC}{B.A.Sc. Computer Engineering}{CGPA 3.16}{Fall 2020}{Present}
     \school{University of Saskatchewan}{Saskatoon, SK}{B.Sc. Physiology and Pharmacology}{Graduated with great distinction}{Fall 2016}{Summer 2020}
     %----End of Education----%
 
@@ -154,7 +171,10 @@
     \section{LEADERSHIP EXPERIENCE}
     \employer{Women in Engineering (WiE)}{Burnaby, BC}{Co-President}{May 2022}{2023}
     \workItemListStart{}
-        \Item{Lead the Women in Engineering club in providing programs, supports and opportunities forunderrepresented students in engineering}
+        \Item{Organized and hosted club weekly meetings, and coordinated with members for \textbf{event planning}.}
+        \Item{Provided supports for new students and club members beginning their university career.}
+        \Item{Helped strengthen the community bond and support for \textbf{women in engineering at SFU}.}
+
     \workItemListEnd{}
     %----End of Awards----%
 
