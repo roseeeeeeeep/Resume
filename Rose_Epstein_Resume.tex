@@ -70,8 +70,8 @@
     {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} \hfill #2\\}
 }
 
-\newcommand{\school} [6] {
-    {\textbf{#1} \hfill \textbf{#5 --- #6}\\ \textbf{#3} \hfill #2\\ \begin{itemize}[topsep=0pt,itemsep=-2pt]\item{\textbf{\emph{#4}}}\end{itemize}}
+\newcommand{\school} [4] {
+    {\textbf{#1} \hfill \textbf{#2}\\ \emph{#3} \hfill #4\\}
 }
 
 \newcommand{\workItemListStart} [0] {
@@ -105,73 +105,68 @@
     \contact{Rose Epstein}{+1(306) 850 --7153}{rea13@sfu.ca}{https://www.linkedin.com/in/rose-epstein/}
     %----End of Profile----%
 
-    %----Skills----%
-    \section{TECHNICAL SKILLS}
+    %----Education & Skills----%
+    \section{EDUCATION and TECHNICAL SKILLS}
+    \school{Simon Fraser University}{Graduation: Dec 2025}{BASc. in Engineering Science, Computer Engineering}{Burnaby, BC}
+    \school{University of Saskatchewan}{Sept 2016 --- June 2020}{BSc. in Biomedical Sciences, Physiology and Pharmacology}{Saskatoon, SK}
     \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-        \textbf{Programming Languages:}{ C / C++, VHDL, SQL, MATLAB, Haskell, Assembly} \\
+        \textbf{Programming Languages:}{ C / C++, VHDL, SQL, MATLAB, Haskell} \\
         \textbf{Tools, Frameworks \& Technologies:}{ Git, Visual Studio Code, Quartus Prime, Modelsim, Xilinx Vivado, Linux, macOS, Windows} \\
         %--Have not worked with linux enough to know what this means--%
         %%\textbf{Linux:}{ Admin, Bash, Kernel Config, Package Mgmt (APT, YUM), Networking, UFW/iptables, FS Mgmt, cron, SSH} \\
         \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Advanced Digital Systems, Programming for Heterogeneous Systems} \\
     }}
     \end{itemize}
-    %----End of Skills----%
+    %----End of Education & Skills----%
 
     %----Experience----%
     \section{WORK EXPERIENCE}
     \employer{Epic Semiconductors}{Vancouver, BC}{Application Engineer}{Jan}{Apr 2022}
     \workItemListStart{}
-        \Item{Executed experiments for process and product development, including circuit analysis, \textbf{populating PCBs with SMD soldering}, followed by debugging and verification.}
-        \Item{Developed a C program on to produce an ECG signal from a \textbf{low pass filter as a PWM circuit}.}
+        \Item{Executed experiments for process and product development, including circuit analysis, populating PCBs with SMD soldering, followed by debugging and verification.}
+        \Item{Developed a C program on to produce an ECG signal from a PWM circuit.}
         \Item{Designed, tested and implemented a heart-shaped PCB to house the ECG producing circuit, to be used for future client demonstrations.}
-        \Item{Designed and tested a \textbf{complex theremin gesture detection circuit} to be used for future client demonstrations.}
+        \Item{Designed and tested a complex theremin gesture detection circuit to be used for future client demonstrations.}
         \workItemListEnd{}
     %----End of Experience----%
 
+    %----Awards----%
+    \section{LEADERSHIP EXPERIENCE}
+    \employer{Women in Engineering (WiE)}{Burnaby, BC}{Co-President}{May 2022}{2023}
+    \workItemListStart{}
+        \Item{Led and coordinated a team of 20 members to manage various social, academic, internal and external responsibilities.}
+        \Item{Facilitated club meetings with club members, encouraging effective communication, and supporting a strong sense of teamwork and community.}
+        \Item{Built relationships with SFU faculty, SFU clubs, and external organizations to organize events, create networking opportunities, and secure funding and resources for members and female students.}
+    \workItemListEnd{}
+    %----End of Awards----%
+
     %----Projects----%
     \section{PROJECT EXPERIENCE}
-    {{\color{colorValue}} \underline{\textbf{Snake Game on Zedboard:}}} \hfill \textbf{Spring 2024}
+    {{\color{colorValue}} \underline{\textbf{Snake Game on Xilinx Zedboard with Vivado:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-        \Item{Developed \textbf{interrupt-driven VGA graphics iterface for Snake Game on Xilinx Zedboard}, with push button input for real-time user interaction.}
+        \Item{Developed interrupt-driven VGA graphics iterface for Snake Game on Xilinx Zedboard, with push button input for real-time user interaction.}
         \Item{Implemented the interrupt handler, and integrated this with the VGA controller and SoC, creating a seamless embeded system.}
-        \Item{Designed \textbf{game logic in software using C++}, and created all \textbf{custom graphics with GiMP}, including game screens, sprites and animations.}
+        \Item{Designed game logic in software using C++, and created all custom graphics with GiMP, including game screens, sprites and animations.}
         \Item{Independently designed, implemented and tested the hardware, using Xilinx Vivado, and the software, using Xilinx Vitis.}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization:}}} \hfill \textbf{Fall 2023}
+    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization with C++:}}} \hfill \textbf{Fall 2023}
     \resumeItemListStart{}
-        \Item{Implement an \textbf{FPGA acceleration project} on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using \textbf{High-Level Synthesis (HLS) C++.}}
-        \Item{\textbf{Optimized the data transfer} between the host and FPGA with memory coalescing optimizations}
+        \Item{Implement an FPGA acceleration project on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using High-Level Synthesis (HLS) C++.}
+        \Item{Optimized the data transfer between the host and FPGA with memory coalescing optimizations}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Customized UART Protocol in an FPGA:}}} \hfill \textbf{Summer 2023}
+    {{\color{colorValue}} \underline{\textbf{Customized UART Protocol in an FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
     \resumeItemListStart{}
         \Item{Implemented \textbf{UART protocol on the Altera DE2 FPGA} using VHDL, with baud rate generation, data framing and error detection.}
         \Item{Coordinated with a group to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
         \Item{Implemented the transmitter component to send data serially to the receiver, and extensively tested the entire system with a testbench using ModelSim.}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Scrolling Message Display on FPGA}}} \hfill \textbf{Fall 2021}
+    {{\color{colorValue}} \underline{\textbf{Scrolling Message Display on FPGA with VHDL}}} \hfill \textbf{Fall 2021}
     \resumeItemListStart{}
         \Item{Developed a VHDL program for the Altera DE2-115 board, to display a scrolling message on HEX display.}
         \Item{Coordinated with a group of two to develop a \textbf{custom instruction set for ASIP} to meet the program requirements}
         \Item{Implemented user interface for user input through the on board push-button to trigger different displays.}
     \resumeItemListEnd{}
     %----End of Projects----%
-
-    %----Education----%
-    \section{EDUCATION}
-    \school{Simon Fraser University - B.A.Sc.,}{Burnaby, BC}{B.A.Sc. Computer Engineering}{CGPA 3.16}{Fall 2020}{Present}
-    \school{University of Saskatchewan}{Saskatoon, SK}{B.Sc. Physiology and Pharmacology}{Graduated with great distinction}{Fall 2016}{Summer 2020}
-    %----End of Education----%
-
-    %----Awards----%
-    \section{LEADERSHIP EXPERIENCE}
-    \employer{Women in Engineering (WiE)}{Burnaby, BC}{Co-President}{May 2022}{2023}
-    \workItemListStart{}
-        \Item{Organized and hosted club weekly meetings, and coordinated with members for \textbf{event planning}.}
-        \Item{Provided supports for new students and club members beginning their university career.}
-        \Item{Helped strengthen the community bond and support for \textbf{women in engineering at SFU}.}
-
-    \workItemListEnd{}
-    %----End of Awards----%
 
 \end{document}
