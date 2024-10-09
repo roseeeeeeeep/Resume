@@ -70,9 +70,10 @@
     {\textbf{#3} \hfill \textbf{#4 --- #5}\\ \textbf{\emph{#1}} \hfill #2\\}
 }
 
-\newcommand{\school} [4] {
-    {\textbf{#1} \hfill \textbf{#2}\\ \emph{#3} \hfill #4\\}
+\newcommand{\school} [6] {
+    {\textbf{#1} --- #3 \hfill \textbf{#2}\\ #4 -- \emph{#6} \hfill #5\\}
 }
+
 
 \newcommand{\workItemListStart} [0] {
     \vspace{-1pt}
@@ -107,8 +108,8 @@
 
     %----Education----%
     \section{EDUCATION}
-    \school{Simon Fraser University}{Graduation: Dec 2025}{BASc. in Engineering Science, Computer Engineering}{Burnaby, BC}
-    \school{University of Saskatchewan}{Sept 2016 --- June 2020}{BSc. in Biomedical Sciences, Physiology \& Pharmacology}{Saskatoon, SK}
+    \school{Simon Fraser University}{Graduation: Dec 2025}{BASc. in Engineering Science}{Computer Engineering}{Burnaby, BC}{CGPA: 3.14}
+    \school{University of Saskatchewan}{Sept 2016 --- June 2020}{BSc. in Biomedical Sciences}{Physiology \& Pharmacology}{Saskatoon, SK}{Graduated with Great Distinction}
     %----End of Education----%
     
     %----Skills----%
@@ -116,8 +117,8 @@
     \begin{itemize}[leftmargin=0in, label={}]
         \small{\item{
             \textbf{Programming Languages:}{ C / C++, VHDL, SQL, MATLAB, Haskell} \\
-    \textbf{Tools, Frameworks \& Technologies:}{ Git, Visual Studio Code, Quartus Prime, Xilinx Vivado and Vitis, Linux, macOS, Windows} \\
-    \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Advanced Digital Systems, Programming for Heterogeneous Systems} \\
+            \textbf{Tools, Frameworks \& Technologies:}{ Git, Visual Studio Code, Quartus Prime, Xilinx Vivado and Vitis, Linux, macOS, Windows} \\
+            \textbf{Relevant Courses:}{ Embedded Systems, Digital Systems Design, Advanced Digital Systems, Programming for Heterogeneous Systems} \\
         }}
         \end{itemize}
     %----End of Skills----%
@@ -128,7 +129,7 @@
     \workItemListStart{}
         \Item{Executed experiments for process and product development, including circuit analysis, populating PCBs with SMD soldering, followed by debugging and verification.}
         \Item{Managed an ECG-signal producing PCB project for client demonstrations, including initial breadboard testing and circuit analysis, 
-                coding and programming the chip to generate the ECG signal, designing and populating the PCB, and conducting extensive testing to achieve successful results.}
+                programming the chip to generate the ECG signal, designing and populating the PCB, and conducting extensive testing to achieve successful results.}
         \Item{Designed and tested a gesture detection circuit to be used for future client demonstrations, conducting the initial circuit analysis to ensure functionality 
                 and extensively testing on a breadboard to determine the optimal design prior to implementation.}
         \workItemListEnd{}
@@ -138,39 +139,52 @@
     \section{LEADERSHIP EXPERIENCE}
     \employer{Women in Engineering (WiE)}{Burnaby, BC}{Co-President}{May 2022}{2023}
     \workItemListStart{}
-        \Item{Led and coordinated a team of 20 members to manage various social, academic, internal and external responsibilities.}
+        \Item{Led and coordinated a team to manage various social, academic, internal and external responsibilities.}
         \Item{Facilitated club meetings with club members, encouraging effective communication, and supporting a strong sense of teamwork and community.}
-        \Item{Built relationships with SFU faculty, SFU clubs, and external organizations to organize events, create networking opportunities, and secure funding and resources for members and female students.}
+        \Item{Built relationships with SFU faculty, SFU clubs, and external organizations to organize events, create networking opportunities, and secure funding and resources for female students at SFU and in the community.}
     \workItemListEnd{}
     %----End of Awards----%
 
     %----Projects----%
     \section{PROJECT EXPERIENCE}
-    {{\color{colorValue}} \underline{\textbf{Snake Game on Xilinx Zedboard with Vivado:}}} \hfill \textbf{Spring 2024}
+    {{\color{colorValue}} \underline{\textbf{Interrupt Driven Graphical Interface on FPGA with Vivado and Vitis:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-        \Item{Developped a 2D Snake Game on Xilinx Zedboard utilizing Vivado and Vitis C/C++ tools, optimising memory usage and resource utilisation for smooth game performance.}
-        \Item{Developed interrupt-driven VGA graphics iterface for Snake Game on Xilinx Zedboard, with push button input for real-time user interaction.}
-        \Item{Implemented the interrupt handler, and integrated this with the VGA controller and SoC, creating a seamless embeded system.}
-        \Item{Designed game logic in software using C++, and created all custom graphics with GiMP, including game screens, sprites and animations.}
-        \Item{Independently designed, implemented and tested the hardware, using Xilinx Vivado, and the software, using Xilinx Vitis.}
+        \Item{Designed interrupt-driven VGA graphics interface on Xilinx Zedboard, with push button input for real-time user interaction.}
+        \Item{Developped interrupt service routines to handle real-time GPIO events and signal snake movement or screen navigation to ensure proper handling of graphical displays for VGA output display.}
+        \Item{Thoroughly tested and integrated individual graphical elements, verifying visual accuracy and correct dunctionality of interrupt routines, ensuring smooth screen updates in response to GPIO inputs on VGA display.}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization with C++:}}} \hfill \textbf{Fall 2023}
+    {{\color{colorValue}} \underline{\textbf{Graphical 2D Game Application on FPGA with Vivado and Vitis:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-        \Item{Implement an FPGA acceleration project on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using High-Level Synthesis (HLS) C++.}
-        \Item{Optimized the data transfer between the host and FPGA with memory coalescing optimizations}
+    \Item{Developped a 2D Graphical Snake Game on Xilinx Zedboard utilizing Vivado and Vitis C/C++ tools, optimising memory usage and resource utilisation for smooth game performance.}
+    %\Item{Designed game logic in software using C++ and created all custom graphics with GiMP, including game screens, sprites and animations.}
+    \Item{Implemented seamless gameplay mechanics (snake movement, reward collection, player controls) and menu navigation (setting selections and screen transitions), all with smooth real-time screen display updates.}
+    \Item{Integrated interrupt driven graphical interface with the VGA controller plus other crucial IP blocks and SoC, creating a seamless embeded system.}
+    \Item{Independently designed, implemented and tested the hardware, using Xilinx Vivado, and the software, using Xilinx Vitis.}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Customized UART Protocol in an FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
+    %{{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization with C++:}}} \hfill \textbf{Fall 2023}
+    %\resumeItemListStart{}
+    %    \Item{Implement an FPGA acceleration project on the Gaussian Elimination kernel from GPU benchmark suite Rodinia using High-Level Synthesis (HLS) C++.}
+    %    \Item{Optimized the data transfer between the host and FPGA with memory coalescing optimizations}
+    %\resumeItemListEnd{}
+    {{\color{colorValue}} \underline{\textbf{Customized UART Protocol on FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
     \resumeItemListStart{}
-        \Item{Implemented \textbf{UART protocol on the Altera DE2 FPGA} using VHDL, with baud rate generation, data framing and error detection.}
+        \Item{Implemented UART protocol on Altera DE2 FPGA using VHDL, with baud rate generation, data framing and error detection.}
         \Item{Coordinated with a group to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
-        \Item{Implemented the transmitter component to send data serially to the receiver, and extensively tested the entire system with a testbench using ModelSim.}
+        \Item{Implemented the transmitter component to send data serially to the receiver, taking input data from the on-board switches and initiating transmission with a key press.}
+        \Item{Extensively tested the transmitter and receiver copmonents indiviudally, then together with the system with testbenches using ModelSim.}
     \resumeItemListEnd{}
-    {{\color{colorValue}} \underline{\textbf{Scrolling Message Display on FPGA with VHDL}}} \hfill \textbf{Fall 2021}
-    \resumeItemListStart{}
-        \Item{Developed a VHDL program for the Altera DE2-115 board, to display a scrolling message on HEX display.}
-        \Item{Coordinated with a group of two to develop a \textbf{custom instruction set for ASIP} to meet the program requirements}
-        \Item{Implemented user interface for user input through the on board push-button to trigger different displays.}
-    \resumeItemListEnd{}
+    %{{\color{colorValue}} \underline{\textbf{Roulette Game on FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
+    %\resumeItemListStart{}
+    %    \Item{Implemented UART protocol on the Altera DE2 FPGA using VHDL, with baud rate generation, data framing and error detection.}
+    %    \Item{Coordinated with a group to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
+    %    \Item{Implemented the transmitter component to send data serially to the receiver, and extensively tested the entire system with a testbench using ModelSim.}
+    %\resumeItemListEnd{}
+    %{{\color{colorValue}} \underline{\textbf{Scrolling Message Display on FPGA with VHDL}}} \hfill \textbf{Fall 2021}
+    %\resumeItemListStart{}
+    %    \Item{Developed a VHDL program for the Altera DE2-115 board, to display a scrolling message on HEX display.}
+    %    \Item{Coordinated with a group of two to develop a custom instruction set for ASIP to meet the program requirements}
+    %    \Item{Implemented user interface for user input through the on board push-button to trigger different displays.}
+    %\resumeItemListEnd{}
     %----End of Projects----%
 
 \end{document}
