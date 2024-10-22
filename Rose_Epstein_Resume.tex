@@ -57,8 +57,8 @@
 \newcommand{\contact} [5] {
     \begin{center}
         \textbf{\color{colorValue}\Huge #1} \\ \vspace{1pt}
-        \small {\faIcon{map-marker-alt}} \underline{#5} {\faIcon{phone} \underline{#2}} $|$ \href{mailto:#3}{\faIcon{envelope} \underline{#3}} $|$ 
-        \href{#4}{\faIcon{linkedin} \underline{Rose--Epstein}} $|$
+        \small {\faIcon{map-marker-alt}} \underline{#5} $|$ {\faIcon{phone} \underline{#2}} $|$ \href{mailto:#3}{\faIcon{envelope} \underline{#3}} $|$ 
+        \href{#4}{\faIcon{linkedin} \underline{Rose--Epstein}} 
     \end{center}
 }
 
@@ -127,11 +127,10 @@
     \section{WORK EXPERIENCE}
     \employer{Epic Semiconductors}{Vancouver, BC}{Application Engineer}{Jan}{Apr 2022}
     \workItemListStart{}
-        \Item{Executed experiments for process and product development, including circuit analysis, populating PCBs with SMD soldering, followed by debugging and verification.}
-        \Item{Managed an ECG-signal producing PCB project for client demonstrations, including initial breadboard testing and circuit analysis, 
-                programming the chip to generate the ECG signal, designing and populating the PCB, and conducting extensive testing to achieve successful results.}
-        \Item{Designed and tested a gesture detection circuit to be used for future client demonstrations, conducting the initial circuit analysis to ensure functionality 
-                and extensively testing on a breadboard to determine the optimal design prior to implementation.}
+        \Item{Executed experiments for process and product development, including circuit analysis, populating PCBs with SMD soldering, and performing debugging and verification.}
+        \Item{Managed an ECG-signal producing PCB project for client demonstrations, including breadboard testing and circuit analysis, 
+                programming for signal generation, PCB design and population, and extensive testing to achieve successful results.}
+        \Item{Designed and tested a gesture detection circuit for future client demonstrations, performing initial circuit analysis and extensively testing on a breadboard to optimize design prior to implementation.}
         \workItemListEnd{}
     %----End of Experience----%
 
@@ -141,25 +140,25 @@
     \workItemListStart{}
         \Item{Led and coordinated a team to manage various social, academic, internal, and external responsibilities.}
         \Item{Facilitated club meetings with club members, encouraging effective communication and supporting a strong sense of teamwork and community.}
-        \Item{Built relationships with SFU faculty, SFU clubs, and external organizations to organize events, create networking opportunities, and secure funding and resources for female students at SFU and in the community.}
+        \Item{Built relationships with SFU faculty, other SFU clubs, and external organizations to organize events, create networking opportunities, and secure funding and resources for female students at SFU and in the broader community.}
     \workItemListEnd{}
     %----End of Awards----%
 
     %----Projects----%
     \section{PROJECT EXPERIENCE}
-    {{\color{colorValue}} \underline{\textbf{Interrupt Driven Graphical Interface on FPGA with Vivado and Vitis:}}} \hfill \textbf{Spring 2024}
+    {{\color{colorValue}} \underline{\textbf{Interrupt Driven Graphical Interface on FPGA:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-        \Item{Designed an interrupt-driven VGA graphics interface on Xilinx Zedboard, with push button input for real-time user interaction.}
-        \Item{Developed an interrupt service routine in C++ to handle real-time GPIO events and signal snake movement or screen navigation to ensure proper handling of graphical displays for VGA output.}
-        \Item{Thoroughly tested and integrated individual graphical elements, verifying visual accuracy and correct functionality of interrupt routines, ensuring smooth screen updates in response to GPIO inputs on the VGA display.}
+        \Item{Designed an interrupt-driven VGA graphical interface on Xilinx Zedboard, with push button input for real-time user interaction.}
+        \Item{Developed an interrupt service routine in C++ to handle real-time GPIO events to ensure proper graphical display for VGA output.}
+        \Item{Thoroughly tested and integrated graphical elements, verifying visual accuracy and smooth screen updates in response to GPIO inputs.}
     \resumeItemListEnd{}
     {{\color{colorValue}} \underline{\textbf{Graphical 2D Game Application on FPGA with Vivado and Vitis:}}} \hfill \textbf{Spring 2024}
     \resumeItemListStart{}
-    \Item{Developed a dual ARM core 2D Graphical Snake Game on Xilinx Zedboard utilizing Vivado and Vitis C/C++ tools, optimizing memory usage and resource utilization for smooth game performance.}
+    \Item{Developed a 2D Graphical Snake Game on Xilinx Zedboard utilizing Vivado and Vitis tools, optimizing memory usage and performance.}
     %\Item{Designed game logic in software using C++ and created all custom graphics with GiMP, including game screens, sprites and animations.}
-    \Item{Implemented seamless gameplay mechanics (snake movement, reward collection, player controls) and menu navigation (setting selections and screen transitions), all with smooth real-time screen display updates.}
-    \Item{Integrated the interrupt-driven graphical VGA graphical interface with the VGA controller and SoC, creating a seamless embedded system.}
-    \Item{Independently designed, implemented, and tested the hardware using Xilinx Vivado, and the software using Xilinx Vitis.}
+    \Item{Implemented seamless gameplay mechanics and menu navigation all with smooth real-time screen display updates.}
+    \Item{Integrated the interrupt-driven graphical VGA interface with the SoC, creating a seamless embedded system.}
+    \Item{Independently designed, implemented, and tested the hardware using Xilinx Vivado, the software using Xilinx Vitis.}
     \resumeItemListEnd{}
     %{{\color{colorValue}} \underline{\textbf{Gaussian Elimination Kernel FPGA Optimization with C++:}}} \hfill \textbf{Fall 2023}
     %\resumeItemListStart{}
@@ -169,9 +168,9 @@
     {{\color{colorValue}} \underline{\textbf{Customized UART Protocol on FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
     \resumeItemListStart{}
         \Item{Implemented UART protocol on Altera DE2 FPGA using VHDL, with baud rate generation, data framing, and error detection.}
-        \Item{Coordinated with a group to design, implement, and optimize a UART protocol in VHDL on the FPGA board.}
-        \Item{Implemented the transmitter component to send data serially to the receiver, taking input data from the on-board switches and initiating transmission with a key press.}
-        \Item{Extensively tested the transmitter and receiver components individually, then together with the SoC with testbenches in ModelSim.}
+        \Item{Collaborated with a team to design, implement, and optimize a UART protocol in VHDL.}
+        \Item{Developed the transmitter component to send data serially to the receiver, taking input data from the on-board switches, with transmission initiated by a key press.}
+        \Item{Extensively tested the transmitter and receiver components, both individually and in conjunction with the SoC, using testbenches in ModelSim.}
     \resumeItemListEnd{}
     %{{\color{colorValue}} \underline{\textbf{Roulette Game on FPGA with VHDL:}}} \hfill \textbf{Summer 2023}
     %\resumeItemListStart{}
